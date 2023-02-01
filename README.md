@@ -1,5 +1,3 @@
 # Embedathon Team Neutrino
-Repo for Embedathon Software Subtask - Team Neutrino
-Team members:
--Vedant
--Vignesh
+Repo for Embedathon Software Subtask - Team Neutrino <br>
+Team members: Vedant and Vignesh
