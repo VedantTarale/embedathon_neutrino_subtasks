@@ -4,11 +4,11 @@ import time
 
 async def client():
     count = 0
+    initial_time = time.time()
     while True:
         try: 
             async with websockets.connect("ws://localhost:8000") as websocket:
                 message = await websocket.recv()
-                initial_time = time.time()
                 if message:
                     if count != 5:
                         print(f"Received message is {message} at {time.ctime()}")
