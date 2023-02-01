@@ -1,2 +1,2 @@
 # Embedathon Team Neutrino
-Rppo for Embedathon Software Subtask - Team Neutrino
+Repo for Embedathon Software Subtask - Team Neutrino
