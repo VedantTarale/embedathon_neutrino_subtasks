@@ -14,13 +14,16 @@ async def send_data(websocket):
 async def receive_data(websocket):
     while True:
         msg = await websocket.recv()
-        print(f"Received Message: {msg}")
+        print(msg)
 
 
 async def server(websocket, path):
-    send_func = asyncio.create_task(send_data(websocket))
-    receive_func = asyncio.create_task(receive_data(websocket))
-    await asyncio.gather(send_func, receive_func)
+    while True:
+        try:
+            send_func = asyncio.create_task(send_data(websocket))
+            receive_func = asyncio.create_task(receive_data(websocket))
+            await asyncio.gather(send_func, receive_func)
+        except: pass
 
 
 async def main():

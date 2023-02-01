@@ -16,7 +16,7 @@ async def client():
                         await asyncio.sleep(1)
                     else:
                         count = 0
-                        await websocket.send(f"Client0: Received 5 Messages in {time.time()-initial_time}")
+                        await websocket.send(f"Client1: Received 5 Messages in {time.time()-initial_time}")
                         initial_time = time.time()
                         await asyncio.sleep(1)
         except:
