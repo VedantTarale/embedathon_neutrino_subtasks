@@ -1,2 +1,2 @@
-# embedathon_neutrino_sortware_subtask
-Reop for Embedathon Software Subtask
+# Embedathon Team Neutrino
+Rppo for Embedathon Software Subtask - Team Neutrino
