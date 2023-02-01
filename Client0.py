@@ -15,7 +15,7 @@ async def send_data(websocket):
             initial_time = time.time()
 
 
-async def receive_messages(websocket):
+async def receive_data(websocket):
     pass #TO BE CODED
 
 
