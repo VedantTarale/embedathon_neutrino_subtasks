@@ -7,17 +7,23 @@ async def send_data(websocket):
     initial_time = time.time()
     while True:
         while count%5 != 0:
-            count = count +1
+            count = count + 1
             await asyncio.sleep(1)
         if count == 5:
-            count = count +1
+            count = count + 1
             await websocket.send(f"Received 5 Messages in {time.time()-initial_time}")
             initial_time = time.time()
 
 
 async def receive_data(websocket):
-    pass #TO BE CODED
-
+    count = 0
+    while True:
+        message = await websocket.recv()
+        print(f"Received message is {message} at {time.ctime()}")
+        count = count + 1
+        if count == 5:
+            print(f"Received 5 messages")
+            count = 0
 
 async def client():
     async with websockets.connect("ws://localhost:8000") as websocket:
