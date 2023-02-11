@@ -63,3 +63,12 @@ Minecraft:
 	<li>Minecraft was played using the modified code.</li>
 	</ul>
 <hr>
+
+Matrix Control:
+<br>
+	<ul>
+	<li>Controls the 4x4 LED Matrix built in the hardware task.</li>
+	<li>The Matrix displays ↑ ,↓, →, ← depending on the sensor(MPU6050) orientation.</li>
+	<li>Video uploaded in drive.</li>
+	</ul>
+<hr>
