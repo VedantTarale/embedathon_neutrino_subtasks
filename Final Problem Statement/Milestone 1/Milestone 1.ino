@@ -3,10 +3,6 @@
 const int MPU = 0x68;
 int16_t AcX,AcY,AcZ;
  
-double x;
-double y;
-double z;
- 
 void setup(){
 Wire.begin();
 Wire.beginTransmission(MPU);
